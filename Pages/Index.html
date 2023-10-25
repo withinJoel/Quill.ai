@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bard</title>
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 98vw;
+  height: 160vh;
+  padding: 1rem;
+  font-family: Avenir, sans-serif;
+  font-size: 112.5%;
+  color: #124;
+  background-image: radial-gradient(rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0) 40vw), radial-gradient(rgba(0, 128, 0, 0.3), rgba(0, 128, 0, 0) 40vw), radial-gradient(rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0) 40vw), radial-gradient(rgba(255, 255, 0, 0.3), rgba(255, 255, 0, 0) 40vw), radial-gradient(rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0) 40vw);
+  background-position: -40vw 14rem, 50% 10rem, 60vw 14rem, -10vw calc(14rem + 20vw), 30vw calc(14rem + 20vw);
+  background-size: 80vw 80vw;
+  background-repeat: no-repeat;
+}
+
+header {
+  max-width: 600px;
+  margin: 24vh auto;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+h1 + p {
+  margin-top: 1rem;
+}
+
+main {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  margin: -1rem;
+  list-style: none;
+}
+@media (min-width: 600px) {
+  .cards {
+    flex-direction: row;
+  }
+}
+
+.card {
+  flex: 1;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 6rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card * {
+  margin-bottom: 1rem;
+}
+
+.card--image {
+  font-size: 6rem;
+  line-height: 1;
+}
+.card.-red .card--image {
+  color: #ff8080;
+}
+.card.-green .card--image {
+  color: #80c080;
+}
+.card.-blue .card--image {
+  color: #8080ff;
+}
+.card-content {
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.card-content:hover {
+  transform: scale(1.05);
+}
+
+  </style>
+</head>
+<body>
+    <header>
+      <h1>The Bard</h1>
+      <p>Welcome to our whimsical web app, where words get scrambled, guesses go wild, and typing tests turn typists into turbo-typers! It's a wordy wonderland for those who like their language games with a side of fun. Get ready to unscramble, guess, and type your way to word domination – with a smile on your face!</p>
+    </header>
+    <main>
+      <ul class="cards">
+        <li class="card -red" onclick="openLink('https://example.com/red');">
+          <div class="card-content">
+            <div class="card--image">✤</div>
+            <h2>Red</h2>
+            <p>Red is the color of agony and life's miserable realities. Harsh but truth. Pain</p>
+          </div>
+        </li>
+        <li class="card -green" onclick="openLink('https://example.com/green');">
+          <div class="card-content">
+            <div class="card--image">✦</div>
+            <h2>Green</h2>
+            <p>Green is the color of peace. It's all there ever is. To die in green.</p>
+          </div>
+        </li>
+        <li class="card -blue" onclick="openLink('https://example.com/blue');">
+          <div class="card-content">
+            <div class="card--image">❖</div>
+            <h2>Blue</h2>
+            <p>Perhaps blue is the color of the soul, all souls. But never have I been a blue calm sea. I have always been a storm.</p>
+          </div>
+        </li>
+      </ul>
+      <ul class="cards">
+        <li class="card -blue" onclick="openLink('https://example.com/blue');">
+            <div class="card-content">
+              <div class="card--image">❖</div>
+              <h2>Blue</h2>
+              <p>Perhaps blue is the color of the soul, all souls. But never have I been a blue calm sea. I have always been a storm.</p>
+            </div>
+        </li>
+        <li class="card -red" onclick="openLink('https://example.com/red');">
+          <div class="card-content">
+            <div class="card--image">✤</div>
+            <h2>Red</h2>
+            <p>Red is the color of agony and life's miserable realities. Harsh but truth. Pain</p>
+          </div>
+        </li>
+        <li class="card -green" onclick="openLink('https://example.com/green');">
+          <div class="card-content">
+            <div class="card--image">✦</div>
+            <h2>Green</h2>
+            <p>Green is the color of peace. It's all there ever is. To die in green.</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+  
+    <script>
+      function openLink(url) {
+        window.location.href = url;
+      }
+    </script>
+  </body>
+  </html>

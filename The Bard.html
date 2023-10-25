@@ -1,0 +1,57 @@
+<style>
+    body{
+  background-color:#fff8f8;
+  margin: 50px;
+  padding: 0px;
+}
+.space{
+  display: inline-block;
+  width: 20px;
+}
+.container{
+  display: inline-block;
+  border-radius: 30px 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.title{
+  display: inline;
+  font-size: 520px;
+  font-weight: bolder;
+  font-family: Helvetica;
+  color:#c99;
+  padding: 0px;
+  margin: 0px;
+  animation: blur-anime 1.05s ease-in-out infinite;
+}
+:root {
+  --d: 1s;
+}
+.delay1{animation-delay: 0.11s;}
+.delay2{animation-delay: 0.22s;}
+.delay3{animation-delay: 0.33s;}
+.delay4{animation-delay: 0.44s;}
+.delay5{animation-delay: 0.55s;}
+.delay6{animation-delay: 0.66s;}
+.delay7{animation-delay: 0.77s;}
+.delay8{animation-delay: 0.88s;}
+.delay9{animation-delay: 0.99s;}
+.delay0{animation-delay: 0.0s;}
+
+
+
+@keyframes blur-anime {
+  0%  {filter: blur(0px);color:#9cc;}
+  40%  {filter: blur(15px);color:#c99;}
+  60%  {filter: blur(15px);color:#c99;}
+  100%  {filter: blur(00px);color:#9cc;}
+}
+
+</style>
+<div class="container">
+    <div class="title delay2">B</div>
+    <div class="title delay9">a</div>
+    <div class="title delay6">r</div>
+    <div class="title delay5">d</div>
+</div>
