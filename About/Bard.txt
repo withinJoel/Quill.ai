@@ -1,0 +1,3 @@
+Bard
+Version 1.4
+Made with 💖 by Joel Jolly.
