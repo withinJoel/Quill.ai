@@ -10,21 +10,25 @@
   background-color:#fff8f8;
   margin: 50px;
   padding: 0px;
+  overflow-y: hidden;
 }
 .space{
   display: inline-block;
   width: 20px;
 }
-.container{
-  display: inline-block;
-  border-radius: 30px 30px;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
   width: 100%;
+  height: 100vh; /* Use viewport height for full-screen height */
   text-align: center;
 }
 
 .title{
   display: inline;
-  font-size: 520px;
+  font-size: 120px;
   font-weight: bolder;
   font-family: Helvetica;
   color:#c99;
