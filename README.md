@@ -1,4 +1,4 @@
-# Bard
+# Quill.ai
 The Bard from the 15th century England to improve your English.
 
 # Support Me
