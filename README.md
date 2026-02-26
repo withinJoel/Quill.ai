@@ -8,6 +8,9 @@ Made with 💖 by Joel Jolly.
 * Fun and interactive UI.
 * Optimized for both Mobile and Desktop.
 
+## 📦 Installation
+* run `npx -y serve .`
+
 # Website
 https://quill-ai.pages.dev/
 
